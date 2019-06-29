@@ -6,5 +6,5 @@ Training data is made from Facebook names of members of various Thai motorcycle 
 Contact me directly if you are interested.
 
 ## Nets
-- `vanznet.py`, 'vanznet_nb.py' : vanilla RNN implementation
-- `vanznet_lstm.py`, `vanznet_lstm_nb.py' : LSTM implementation
+- `vanznet.py`, `vanznet_nb.py` : vanilla RNN implementation
+- `vanznet_lstm.py`, `vanznet_lstm_nb.py` : LSTM implementation
