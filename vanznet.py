@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 
 filepath = 'vanznames.txt'
-use_saved_model = True
+use_saved_model = False
 save_model = True
 model_save_path = 'vanznet.pth'
 model_load_path = 'vanznet.pth'
@@ -125,7 +125,7 @@ if __name__ == "__main__":
                 target_tensor.unsqueeze_(-1)
                 # print(input_tensor)
                 # print(target_tensor)
-                hidden = rnn.initHidden()        
+                hidden = rnn.initHidden()
                 optim.zero_grad()
                 loss = 0
                 for i in range(input_tensor.size(0)):
@@ -141,6 +141,9 @@ if __name__ == "__main__":
 
             if (epoch + 1) % print_every == 0:
                 print("%d/%d: Loss %f" % (epoch+1, epochs, loss_epoch))
+                if save_model:
+                    torch.save(rnn.state_dict(), model_save_path)
+                    print("***** Model saved *****")
         
         # save model
         if save_model:            
