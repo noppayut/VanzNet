@@ -21,7 +21,7 @@ Starting letter | Vanilla RNN | LSTM
 ร | รัก' เอ็น | รักกันเมื่อยังหาย ใจ
 บ | บอร เทียย | บอย ก็กี
 
-## Make yourself a vanz nickname
+## Make your own vanz nickname
 
 Name | Vanz name (LSTM)
 ---- | ----
